@@ -94,7 +94,7 @@ fprintf('Nu : %d \n', Nu);
 ReL = Nu^2 / (0.664^2 * prandtl^(2/3));
 syms Re
 eqn = Nu == 0.037 * Re^(0.8)*prandtl^(1/3);
-ReT = solve(eqn,Re)
+ReT = solve(eqn,Re);
 fprintf('ReT : %d \n', ReT);
 fprintf('ReL : %d \n', ReL);
 

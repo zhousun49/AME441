@@ -1,19 +1,19 @@
 close all;
 %Question: What are the dimentions of the battery pack?
-battery_height = 0.8;
-battery_length = 0.6;%!!!Assumed parameters
+battery_height = 520e-3;
+battery_length = 100e-3;%!!!Assumed parameters
 At = battery_height*battery_length;
 %Total Area of battery cross section (m^2)
 %Question: Are we using five battery packs?
-N = 13;
+N = 65;
 %Number of fins
 efficiency = 1;
 h = linspace(10,500);
 %Convective heat transfer coefficient of Air(W/m^2*K)
 %Range from 10-500
-length = 0.05;
+length = 12.7e-3;
 width = battery_length;
-thickness = 0.05;
+thickness = 3.175e-3;
 %width is width of one fin (m)
 %length is length of one fin (m)
 %thickness is thickness of one fin (m)
