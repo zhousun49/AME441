@@ -8,7 +8,6 @@ K = Kalum;
 % Temperature Assumptions
 Tamb = 27; %[C]
 
-
 % Dimensions of heat sink
 sinkHeight = 0.5; %[m]
 sinkWidth = 0.12388 * 5; %[m] 
@@ -64,11 +63,13 @@ Re_t = 9479843;
 sheet2 = xlsread('Motor Calculations.xlsx', 'Sheet2');
 data = sheet2(3:207,2:14);
 ohmic_loss = data(:,13);
+figure();
+plot(ohmic_loss);
 
 
 %--------------------
 holderA = zeros(1,length(ohmic_loss));
-tBatt = 45.5;
+tBatt = 30;
 h = 93.9011;
 cpBatt = 902;
 mBatt = 25.2; % [kg]
